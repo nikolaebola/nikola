@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      console.log("=== Упражнение 1 ===");
+      let name = "Umer",
+          lastName = "Muradasiloff",
+          patr = "Dzhapparovich",
+          fullName = name + " " + lastName + " " + patr;
+
+      console.log("Длина имени: " + name.length);
+      console.log("Длина фамилии: " + lastName.length);
+      console.log("Длина отчество: " + patr.length);
+      console.log("Длина ФИО: " + fullName.length);
+
+      console.log("\n=== Упражнение 2 ===");
+      let skrg = "Шла Саша по шоссе";
+      console.log(skrg+"\n"
+      +"Две первые: "+skrg[0]+skrg[1]+"\n"
+      +"Две последние буквы: "+skrg[skrg.length-1]+skrg[skrg.length-2]);
+
+      console.log("\n=== Упражнение 3 ===");
+      console.log("Позиция первой пустой подстроки: "+skrg.indexOf(" "));
+
+      console.log("\n=== Упражнение 5 ===");
+      skrg = skrg.split("");
+      skrg[skrg.indexOf(" ")+1] = skrg[skrg.indexOf(" ")+1].toLowerCase();
+      console.log(skrg.join(""));
+      skrg[skrg.indexOf(" ")+1] = skrg[skrg.indexOf(" ")+1].toUpperCase();
+      skrg = skrg.join("");
+      console.log(skrg);
+
+      console.log("\n=== Упражнение 6 ===");
+      let expErr = "Не хочу учится а хочу женится";
+          expErr = expErr.slice(0, expErr.indexOf("тся")) + "ться, " + expErr.slice(expErr.indexOf("а"), expErr.indexOf("тся", 15))
+          + "ться";
+      console.log(expErr);
+
+    </script>
+  </body>
+</html>

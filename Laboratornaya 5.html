@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab5</title>
+  </head>
+  <body>
+    <p id="txt">Lorem ipsum dolor sit amet</p>
+
+    <script type="text/javascript">
+      console.log("=== Упражнение 1 ===");
+      console.log(true+6);
+      console.log(true-6);
+      console.log(true+false);
+      console.log(true-true);
+      console.log("что-то"+false);
+      console.log("что-то"-true);
+
+      console.log("=== Упражнение 2 ===");
+      let A = [], i = 0;
+      while(i <= 2) {
+        A[i] = Math.floor(Math.random()*100);
+        i++; }
+      console.log(A);
+      console.log(A[0]+A[1]+A[2]);
+      console.log(A[0]*A[1]*A[2]);
+      console.log(A[2]%A.length);
+
+      console.log("=== Упражнение 3 ===");
+      function triangleGeron(a, b, c) {
+        let p = (a + b + c) / 2,
+            S = Math.floor(Math.sqrt(p*(p - a) * (p - b) * (p - c)));
+        return S;
+      }
+      console.log('the result is: \n' + triangleGeron(7, 7, 7));
+
+      console.log("=== Упражнение 4 ===");
+      var x = 4,
+          y = 4*x++;
+      console.log(y);
+      y = 4*++x;
+      console.log(y);
+    </script>
+  </body>
+</html>
