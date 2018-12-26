@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //5
+    var arr =[]
+    var s=0
+    for (a=0; a<=4; a++ ){
+      arr[a] = +prompt("введи число", "")
+      s = s + arr[a]
+      console.log(arr[a])
+    }
+     console.log("Сумма чисел", s)
+     //6
+     var P=1, A=[],i, S= +prompt("введите число=","")
+      for (i=0;i<S;i++){
+      A[i]=Math.floor(Math.random()*100)
+}
+      console.log(A);
+      for (i=0;i<A.length;i++){
+      P = P * A[i]
+}
+      console.log(P);
+      //7
+    var arr=[],sum=0,cnt=0
+    for(i=0;i<5;i++){
+    arr[i]=prompt("введите arr["+i+"]=")
+    console.log("arr["+i+"]=" + arr[i]);
+}
+    for(i=0;i<arr.length;i++)
+   if(arr[i]<0){
+     sum+=+arr[i]
+     cnt++
+   }
+console.log(sum/cnt);
+
+//8
+var A=[], B = [], C=0
+var key = +prompt("введите искомое значение", "")
+for(i=0;i<5;i++){
+A[i]=Math.floor(Math.random()*10)
+}
+for(i=0;i<A.length;i++){
+if(A[i] == key){
+ B[C] = i
+ C++
+}
+}
+if (B.length==0)console.log("Искомого значения нет");
+else {
+  console.log("Индексы совпадают" + B);
+ }
+ //9
+ var A=[]
+var B=[], C=[]
+for (i=0;i<5;i++){
+  A[i]=+prompt("введите A[" + i + "]=")
+}
+for(i=0;i<A.length;i++)
+if(A[i]>0) B.push(A[i])
+else {
+  if (A[i]<0) C.push(A[i])
+}
+console.log("положительные числа: " + B);
+console.log("отрицательные числа: " + C)
+//10
+var A=[]
+var B=[], C=[]
+for(i=0;i<5;i++){
+   A[i]=Math.floor(Math.random()*10)
+   B[i]=+prompt("введите B["+i+"]=")
+   C.push(A[i]+B[i])}
+console.log(A);
+console.log(B);
+console.log(C);
+//11
+var A = []
+var leastnum= 0, greatnum = 0
+var B = +prompt("введите значение длины массива=","")
+for (i=0;i<B;i++){
+   A[i]=Math.floor(Math.random()*10-5)}
+for (i=0;i<5;i++){
+  if(A[i]>0&A[i]>greatnum)
+  greatnum= A[i]
+  else {
+    if(A[i]<0&A[i]<leastnum)
+    leastnum= A[i]
+  }
+}
+console.log(A);
+console.log("наим число " + leastnum);
+console.log("наиб число " + greatnum);
+  </script>
+</body>
+</html>
